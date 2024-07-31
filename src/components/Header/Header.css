@@ -1,0 +1,6 @@
+.header {
+	@apply flex m-5;
+	&__title {
+		@apply text-indigo-900 text-xl;
+	}
+}
