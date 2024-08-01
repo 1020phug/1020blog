@@ -1,5 +1,7 @@
-@import "./components/Header/Header.css";
-@import "./components/Footer/Footer.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+	font-family: "Noto Sans", sans-serif;
+}
