@@ -14,7 +14,9 @@ export default function Hero() {
 					<p className="py-6">
 						Hi mate ! Welcome to 1020Blog. This is a simple blog of Tenzo.
 					</p>
-					<button className="btn btn-primary">Get Started</button>
+					<button className="btn btn-primary">
+						<a href="#news">Get Started</a>
+					</button>
 				</div>
 			</div>
 		</div>

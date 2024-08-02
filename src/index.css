@@ -5,4 +5,6 @@
 
 body {
 	font-family: "Raleway", sans-serif;
+	scroll-behavior: smooth;
+	scrollbar-width: none;
 }
