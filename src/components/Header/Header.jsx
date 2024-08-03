@@ -56,6 +56,14 @@ function Themes() {
 	);
 }
 
+function Logo() {
+	return (
+		<Link to={"/"} className="btn btn-ghost text-xl gap-0">
+			<span className="text-primary inline">1020</span>Blog
+		</Link>
+	);
+}
+
 function Header() {
 	return (
 		<div className="navbar bg-base-100 px-32 fixed top-0 left-0 w-full z-10">
@@ -82,12 +90,10 @@ function Header() {
 				</ul>
 			</div>
 			<div className="navbar-center">
-				<Link to={"/"} className="btn btn-ghost text-xl gap-0">
-					<span className="text-primary inline">1020</span>Blog
-				</Link>
+				<Logo />
 			</div>
-			<div className="navbar-end">
-				<button className="btn btn-ghost btn-circle">
+			<div className="navbar-end flex-auto">
+				<button className="btn btn-ghost btn-circle max-sm:hidden">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						className="h-5 w-5"
@@ -103,7 +109,7 @@ function Header() {
 						/>
 					</svg>
 				</button>
-				<button className="btn btn-ghost btn-circle">
+				<button className="btn btn-ghost btn-circle max-sm:hidden">
 					<div className="indicator">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
