@@ -11,6 +11,7 @@ import {
 	MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
+import { ThemeController } from "../ui/theme-controller";
 
 const Header = () => {
 	const navItems = [
@@ -23,8 +24,8 @@ const Header = () => {
 			link: "/about",
 		},
 		{
-			name: "Contact",
-			link: "/contact",
+			name: "Booking",
+			link: "/booking",
 		},
 	];
 
@@ -37,9 +38,10 @@ const Header = () => {
 				<NavBody>
 					<NavbarLogo />
 					<NavItems items={navItems} />
-					<div className="flex items-center gap-4">
+					<div className="flex items-center gap-4 text-white">
+						<ThemeController variant="secondary" />
 						<NavbarButton variant="secondary">Login</NavbarButton>
-						<NavbarButton variant="primary">Book a call</NavbarButton>
+						<NavbarButton variant="primary">Contact</NavbarButton>
 					</div>
 				</NavBody>
 
@@ -68,19 +70,20 @@ const Header = () => {
 							</a>
 						))}
 						<div className="flex w-full flex-col gap-4">
+							<ThemeController variant="primary" />
 							<NavbarButton
 								onClick={() => setIsMobileMenuOpen(false)}
 								variant="primary"
-								className="w-full"
+								className="w-full "
 							>
 								Login
 							</NavbarButton>
 							<NavbarButton
 								onClick={() => setIsMobileMenuOpen(false)}
 								variant="primary"
-								className="w-full"
+								className="w-full "
 							>
-								Book a call
+								Contact
 							</NavbarButton>
 						</div>
 					</MobileNavMenu>
