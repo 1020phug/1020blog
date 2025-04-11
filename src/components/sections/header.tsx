@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
 import { ThemeController } from "../ui/theme-controller";
+import SignInButton from "../auth/signIn";
 
 const Header = () => {
 	const navItems = [
@@ -40,7 +41,9 @@ const Header = () => {
 					<NavItems items={navItems} />
 					<div className="flex items-center gap-4 text-white">
 						<ThemeController variant="secondary" />
-						<NavbarButton variant="secondary">Login</NavbarButton>
+						<NavbarButton variant="secondary">
+							<SignInButton />
+						</NavbarButton>
 						<NavbarButton variant="primary">Contact</NavbarButton>
 					</div>
 				</NavBody>
@@ -76,7 +79,7 @@ const Header = () => {
 								variant="primary"
 								className="w-full "
 							>
-								Login
+								<SignInButton />
 							</NavbarButton>
 							<NavbarButton
 								onClick={() => setIsMobileMenuOpen(false)}
